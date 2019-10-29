@@ -7,6 +7,7 @@ import com.overstar.core.exception.ErrorType;
 import com.overstar.core.exception.SystemErrorType;
 import lombok.Getter;
 
+import java.io.Serializable;
 import java.time.Instant;
 import java.time.ZonedDateTime;
 
@@ -15,7 +16,7 @@ import java.time.ZonedDateTime;
  * @param <T>
  */
 @Getter
-public class Result<T> {
+public class Result<T> implements Serializable {
 
     public static final String SUCCESSFUL_CODE = "200";
     public static final String SUCCESSFUL_MESSAGE = "处理成功";
@@ -46,7 +47,7 @@ public class Result<T> {
      */
     public Result(ErrorType errorType) {
         this.code = errorType.getCode();
-        this.message = errorType.getMesg();
+        this.message = errorType.getMessage();
         this.timestamp = ZonedDateTime.now().toInstant();
     }
 
