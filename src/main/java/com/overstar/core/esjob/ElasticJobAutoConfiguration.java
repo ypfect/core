@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * @Date 2019/9/24 22:30
  */
 @Configuration
-@ConditionalOnProperty("regCenter.serverLis")
+@ConditionalOnProperty("regCenter.serverList")
 //@ConditionalOnExpression("'${regCenter.serverList}'.length() > 0")
 public class ElasticJobAutoConfiguration {
 
