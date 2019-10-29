@@ -24,10 +24,10 @@ public enum SystemErrorType implements ErrorType {
     /**
      * 错误类型描述信息
      */
-    private String mesg;
+    private String message;
 
-    SystemErrorType(String code, String mesg) {
+    SystemErrorType(String code, String message) {
         this.code = code;
-        this.mesg = mesg;
+        this.message = message;
     }
 }
