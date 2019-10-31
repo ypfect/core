@@ -1,3 +1,2 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.overstar.core.dubbo.DubboAutoConfiguration,\
-  com.overstar.core.esjob.ElasticJobAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.overstar.core.esjob.ElasticJobAutoConfiguration
+#com.overstar.core.dubbo.DubboAutoConfiguration
