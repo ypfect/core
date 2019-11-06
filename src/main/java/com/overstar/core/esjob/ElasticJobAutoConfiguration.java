@@ -3,7 +3,6 @@ package com.overstar.core.esjob;
 import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration;
 import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,8 +12,6 @@ import org.springframework.context.annotation.Configuration;
  * @Date 2019/9/24 22:30
  */
 @Configuration
-@ConditionalOnProperty("regCenter.serverList")
-//@ConditionalOnExpression("'${regCenter.serverList}'.length() > 0")
 public class ElasticJobAutoConfiguration {
 
     @Bean(initMethod = "init")
