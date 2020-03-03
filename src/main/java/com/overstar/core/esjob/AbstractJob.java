@@ -26,7 +26,7 @@ public abstract class AbstractJob implements SimpleJob {
 
 	/**
 	 * 构造任务函数，eg：“分别查询出2019年一季度三个月注册的用户ID,统计每个用户的在线时长，每5秒进行一次统计”
-	 * 
+	 *  sss
 	 * @param cron 任务执行时间表达式，eg: "0/5 * * * * ?"
 	 * @param shardingTotalCount 任务分片数, eg: 3 
 	 * @param shardingItemParameters 任务分片参数, eg: "0=20190101-20190201,1=20190201-20190301,2=20190301-20190401"
