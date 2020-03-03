@@ -17,7 +17,7 @@ import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * 支持执行jvm支持的脚本,默认使用groovy执行,应用程序需要引入groovy包 修改描述信息了
+ * 支持执行jvm支持的脚本,默认使用groovy执行,应用程序需要引入groovy包
  * @Bean
 *        public FilterRegistrationBean addFilter() {
  * 		FilterRegistrationBean reg = new FilterRegistrationBean();
