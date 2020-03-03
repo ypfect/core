@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 
 /**
- * @Description  dubbo 自动装配 test
+ * @Description  dubbo 自动装配
  * @Author stanley.yu
  * @Date 2019/9/24 21:11
  */
